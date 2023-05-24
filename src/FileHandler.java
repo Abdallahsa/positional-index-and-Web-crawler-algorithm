@@ -5,7 +5,7 @@ public class FileHandler {
     public static void writeToFile(String fileName, String data) {
         try {
             // Create a FileWriter object with the file path and name
-            FileWriter writer = new FileWriter("reultfolder\\..\\resultfolder\\" + fileName);
+            FileWriter writer = new FileWriter("C:\\Users\\Abdallah Saleh\\Desktop\\IR_2\\positional-index-and-Web-crawler-algorithm\\reultfolder/" + fileName);
             // Write the string to the file using the write method
             writer.write(data);
             // Close the FileWriter object to flush and release resources

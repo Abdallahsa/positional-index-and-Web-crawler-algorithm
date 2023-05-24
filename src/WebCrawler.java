@@ -55,7 +55,7 @@ public class WebCrawler {
                     replaceAll("[^a-zA-Z0-9_.-]", "");
                 String body = document.body().text();
                 FileHandler.writeToFile(name, body);
-                fileMatches.add("reultfolder\\..\\resultfolder\\" + name);
+                fileMatches.add("C:\\Users\\Abdallah Saleh\\Desktop\\IR_2\\positional-index-and-Web-crawler-algorithm\\reultfolder/" + name);
                 Elements linksOnPage = document.select("a[href]");
 
                 // Iterate over each link and recursively crawl it if it is a valid URL
@@ -131,7 +131,7 @@ public class WebCrawler {
     }
     public static void main(String[] args) {
         WebCrawler webCrawler =new WebCrawler(2);
-        String url = "https://example.com/";
+        String url = "https://en.wikipedia.org/";
         String query = "illustrative examples";
         webCrawler.searchOnline(url, query);
     }

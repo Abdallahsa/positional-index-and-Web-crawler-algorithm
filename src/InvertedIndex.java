@@ -17,11 +17,7 @@ public class InvertedIndex {
         this.index=new HashMap<>();
     }
 
-    /**
-     * function to build index
-     * @param filenames[]
-     * @return index
-     */
+
     public HashMap<String, DictEntry> buildIndex(String[] filenames) {
         // Initialize the document ID to 1
         int docId = 1;

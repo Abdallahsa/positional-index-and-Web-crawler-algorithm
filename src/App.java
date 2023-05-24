@@ -35,8 +35,8 @@ public class App {
             }
             // test crawl
             else{
-                    WebCrawler webCrawler =new WebCrawler(2);
-                    String url = "https://example.com/";
+                    WebCrawler webCrawler =new WebCrawler(1);
+                    String url = "https://www.w3schools.com/";
 
                     try (Scanner scanner = new Scanner(System.in)) {
                         // read query
@@ -74,7 +74,7 @@ public class App {
 
         System.out.println("\n\n----------------- documentName => similarity-----------------\n");
         // Print the sorted map
-        sortedDocs.forEach((key, value) -> System.out.println( key + " => " + value));
+        sortedDocs.forEach((key, value) -> System.out.println( key.split("/")[0] + " => " + value));
         System.out.println("\n\t----------------------------------\n\n");
     }
 }
